@@ -1,0 +1,253 @@
+@media only screen and (max-width: 1440px) { 
+    // .header-content {
+    //     .patient{
+    //         width: 100%;
+    //         z-index: 3;
+    //         padding: 100px 0;
+    //         .description{
+    //             .address,{
+    //                 width: 30%;
+    //                 margin: auto;
+    //             }
+    //             .home-tel,.mob-tel,.email{
+    //                 width: 23%;
+    //                 margin: auto;
+    //             }
+    //         }
+    //     }
+    // }
+}
+@media only screen and (max-width: 1024px) {
+    .header-content {
+        .patient {
+            .description{
+                padding: 0 15px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {   
+    .col-lg-9.pd-n{
+        padding-left: 15px;
+    }
+    .col-lg-3.pd-n{
+        // display: none;
+        padding-right: 15px;
+    }
+    .header-content {
+        .patient{
+            position: relative;
+            width: 100%;
+            z-index: 3;
+            padding: 50px 0;
+            display: block;
+            .description{
+                .address,{
+                    width: 30%;
+                    margin: auto;
+                }
+                .home-tel,.mob-tel,.email{
+                    width: 23%;
+                    margin: auto;
+                }
+            }
+        }
+        .health-information {
+            .content-top{
+                // width: 100%;
+                // position: fixed;
+                // z-index: 3;
+                // height: 100%;
+                // top: 50px;
+
+                .menu {
+                    width: 100%;
+                    .navs-menu {
+                        .navs-item{
+                           padding: 15px 0;
+                           .navs-a{
+                              font-size: 13px;
+                              i{
+                                text-align: center;
+                                margin: 0px auto;
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .content{
+            display: none;
+        }
+    }
+    .test-content {
+        .cards {
+            .image {
+                img{
+                    max-height: 250px;
+                }
+                &:hover{
+                    .overlay{
+                        transform: translateY(-100px);
+                        animation: animateText .3s ease-in-out;
+                        z-index: 2;
+                        display: block;
+                    }
+                }
+                .overlay {
+                    .btn-demo {
+                        a{
+                            padding: 15px;
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+
+    }
+    .header-top{
+        .btn-menu{
+            display: block;
+          }
+    }
+    @keyframes animateText {
+        0%{
+            // width: 0%;
+            transform: translateY(0px);
+        }
+        25%{
+            // width: 25%;
+            transform: translateY(-30px);
+        }
+        50%{
+            // width: 50%;
+            transform: translateY(-50px);
+        }
+        75%{
+            // width: 75%;
+            transform: translateY(-80px);
+        }
+        100%{
+            // width: 100%;
+            transform: translateY(-100px);
+        }
+        
+        
+    }
+    @keyframes animateAfter {
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 50%;
+        }
+        75%{
+            width: 75%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {  
+    .header-content {
+        .patient {
+            .description {
+                .address{
+                    width: 55%;
+                }
+                .home-tel,.mob-tel,.email{
+                    width: 41%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .header-top{
+        .btn-menu{
+            width: 10%;
+          }
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header-content {
+        .patient {
+            .description {
+                .address{
+                    width: 70%;
+                }
+                .home-tel,.mob-tel,.email{
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+        }
+
+        .health-information {
+            .content-top{
+                .menu {
+                    width: 100%;
+                    .navs-menu {
+                        .navs-item{
+                           padding: 15px 0;
+                           .navs-a{
+                              font-size: 13px;
+                              i{
+                                display: block;
+                                text-align: center;
+                                margin: 0px auto;
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .header-content {
+        .patient {
+            .description {
+                .address{
+                    width: 80%;
+                }
+                .home-tel,.mob-tel,.email{
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+        }
+        .health-information {
+            .content-top{
+                .menu {
+                    width: 100%;
+                    .navs-menu {
+                        .navs-item{
+                           padding: 15px 0;
+                           .navs-a{
+                              font-size: 13px;
+                              i{
+                                display: block;
+                                text-align: center;
+                                margin: 0px auto;
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+

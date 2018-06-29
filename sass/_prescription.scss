@@ -1,0 +1,30 @@
+.prescription-content{
+    margin-top: 100px;
+    
+    .demo-table{
+        box-shadow: $b-shadow;
+        padding: 50px 25px;
+        overflow-x: auto;
+        .table{
+            color: #5f5e5e;
+            margin: 0;
+            border-bottom: 1px solid #e0e0e1;
+            thead{
+                background-color: #f5f5f5;
+                tr{
+                    text-transform: uppercase;
+                }
+            }
+            tbody{
+                tr{
+                    text-transform: capitalize;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        background-color: #e8e8e8;
+                    }
+                }
+            }
+            
+        }
+    }
+}

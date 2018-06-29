@@ -1,0 +1,45 @@
+.recipe-content{
+    margin-top: 75px;
+    .recipe-box{
+        box-shadow: $b-shadow;
+        padding: 50px 25px;
+        color: #5f5e5e;
+        .head{
+            justify-content: space-between;
+            display: flex;
+            text-transform: capitalize;
+            h3{
+
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+        .text{
+            .list{
+                background-color: #f5f5f5;
+                li{
+                    // padding: 0;
+                    font-size: 18px;
+                    span{
+                        text-transform: capitalize;
+                        opacity: 0.7;
+                    }
+                    p{
+    
+                    }
+                }
+                li:last-child{
+                    border: none;
+                }
+                
+            }
+        }
+        .date{
+            justify-content: space-between;
+            display: flex;
+            font-size: 22px;
+            text-transform: capitalize;
+        }
+    }
+}
