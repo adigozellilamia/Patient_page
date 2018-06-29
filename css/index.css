@@ -153,6 +153,9 @@ i {
 .col-lg-9.pd-n {
   padding-left: 0; }
 
+.patient-responsive {
+  height: 100vh; }
+
 .header-top {
   height: 50px;
   background-color: #7bc3d1;
@@ -189,6 +192,7 @@ i {
 .header-content {
   overflow-x: hidden; }
   .header-content .patient {
+    height: 100%;
     background-color: #f0f1f3;
     border-right: 1px solid #e0e0e1;
     padding: 5% 3%;
@@ -397,7 +401,10 @@ i {
 @media only screen and (max-width: 1024px) {
   .header-content .patient .description {
     padding: 0 15px; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+  body {
+    overflow-y: hidden; }
+
   .col-lg-9.pd-n {
     padding-left: 15px; }
 
@@ -411,10 +418,12 @@ i {
     padding: 50px 0;
     display: block; }
     .header-content .patient .description .address {
-      width: 30%;
+      width: 25%;
       margin: auto; }
-    .header-content .patient .description .home-tel, .header-content .patient .description .mob-tel, .header-content .patient .description .email {
-      width: 23%;
+    .header-content .patient .description .home-tel,
+    .header-content .patient .description .mob-tel,
+    .header-content .patient .description .email {
+      width: 18%;
       margin: auto; }
   .header-content .health-information .content-top .menu {
     width: 100%; }
@@ -463,10 +472,27 @@ i {
       width: 75%; }
     100% {
       width: 100%; } } }
+@media only screen and (max-width: 991px) and (min-width: 425px) {
+  .header-content .patient {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    padding: 50px 0;
+    display: block; }
+    .header-content .patient .description .address {
+      width: 30%;
+      margin: auto; }
+    .header-content .patient .description .home-tel,
+    .header-content .patient .description .mob-tel,
+    .header-content .patient .description .email {
+      width: 23%;
+      margin: auto; } }
 @media only screen and (max-width: 425px) {
   .header-content .patient .description .address {
     width: 55%; }
-  .header-content .patient .description .home-tel, .header-content .patient .description .mob-tel, .header-content .patient .description .email {
+  .header-content .patient .description .home-tel,
+  .header-content .patient .description .mob-tel,
+  .header-content .patient .description .email {
     width: 41%;
     margin: auto; }
 
@@ -475,7 +501,9 @@ i {
 @media only screen and (max-width: 375px) {
   .header-content .patient .description .address {
     width: 70%; }
-  .header-content .patient .description .home-tel, .header-content .patient .description .mob-tel, .header-content .patient .description .email {
+  .header-content .patient .description .home-tel,
+  .header-content .patient .description .mob-tel,
+  .header-content .patient .description .email {
     width: 50%;
     margin: auto; }
   .header-content .health-information .content-top .menu {
@@ -491,7 +519,9 @@ i {
 @media only screen and (max-width: 320px) {
   .header-content .patient .description .address {
     width: 80%; }
-  .header-content .patient .description .home-tel, .header-content .patient .description .mob-tel, .header-content .patient .description .email {
+  .header-content .patient .description .home-tel,
+  .header-content .patient .description .mob-tel,
+  .header-content .patient .description .email {
     width: 60%;
     margin: auto; }
   .header-content .health-information .content-top .menu {
